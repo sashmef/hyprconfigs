@@ -1,0 +1,50 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "FiraCode Nerd Font", "Font Awesome 6 Free", sans-serif;
+  font-size: 12px;
+  min-height: 0;
+}
+
+/* Сама панель */
+window#waybar {
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+  color: #cccccc;
+  border-radius: 8px; /* Радиус закругления панели */
+}
+
+/* Все кнопки и текст внутри (делаем их без цветных фонов) */
+#workspaces button, #custom-launcher, #cpu, #memory, #clock, #window {
+  background: transparent;
+  color: #cccccc;
+  padding: 0 10px;
+}
+
+/* Логотип меню слева (цвет бирюзовый из твоего конфига окон) */
+#custom-launcher {
+  color: #33ccff;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+/* Номера рабочих столов */
+#workspaces button {
+  color: #595959; /* Неактивные столы */
+  padding: 0 8px;
+}
+#workspaces button.active {
+  color: #33ccff; /* Активный стол */
+  font-weight: bold;
+}
+
+/* Заголовок текущего окна (центр) */
+#window {
+  color: #888888;
+}
+
+/* Время (выделяем белым) */
+#clock {
+  color: #ffffff;
+  font-weight: bold;
+  padding-right: 15px;
+}
